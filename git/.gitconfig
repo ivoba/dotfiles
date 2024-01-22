@@ -1,0 +1,7 @@
+[user]
+	email = ivo.bathke@gmail.com
+	name = Ivo Bathke
+[core]
+    excludesfile = /Users/ivobathke/.gitignore
+[init]
+	defaultBranch = main
