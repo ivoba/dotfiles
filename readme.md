@@ -12,7 +12,6 @@ my dotfiles
 - linux & osx branches
 - https://github.com/junegunn/fzf
 - https://github.com/cantino/mcfly
-- autoconfigure nvm in zsh: https://www.zeljkovic.sh/blog/2023/auto-loading-nodejs-version-with-zsh-and-nvm
 
 ## Resources
 - https://venthur.de/2021-12-19-managing-dotfiles-with-stow.html
