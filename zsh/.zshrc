@@ -103,7 +103,7 @@ alias S="cd ~/Sites"
 alias I="cd ~/IdeaProjects"
 # create MR for new branch in Gitlab
 alias gpmr='git push -o merge_request.title="$(git symbolic-ref --short HEAD)" -o merge_request.create'
-alias pdfcompress='gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile='
+alias pdfcompress='f(){gs -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$1 $2};f'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
