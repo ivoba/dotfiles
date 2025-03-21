@@ -129,3 +129,9 @@ fi
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+
+# This line adds directories to the system's PATH:
+# 1. $HOME/bin: Adds the user's personal bin directory
+# 2. $HOME/.codeium/windsurf/bin: Adds Codeium's Windsurf binary directory
+# Both are prepended to ensure they take precedence over system directories
+export PATH="$HOME/bin:$HOME/.codeium/windsurf/bin:$PATH"
