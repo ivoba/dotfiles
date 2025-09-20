@@ -103,7 +103,33 @@ alias S="cd ~/Sites"
 alias I="cd ~/IdeaProjects"
 # create MR for new branch in Gitlab
 alias gpmr='git push -o merge_request.title="$(git symbolic-ref --short HEAD)" -o merge_request.create'
-alias pdfcompress='f(){gs -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$1 $2};f'
+
+f_pdfcompress() {
+    gs -sDEVICE=pdfwrite \
+       -dCompatibilityLevel=1.4 \
+       -dPDFSETTINGS=/ebook \
+       -dNOPAUSE -dQUIET -dBATCH \
+       -sOutputFile="${1}_compressed.pdf" "$1"
+}
+# usage: pdfcompress original.pdf
+alias pdfcompress='f_pdfcompress'
+
+f_pdfoptimize() {
+    gs -sDEVICE=pdfwrite \
+       -dCompatibilityLevel=2.0 \
+       -sPDFSETTINGS="$1" \
+       -dDetectDuplicateImages=true \
+       -dRemoveUnusedResources=true \
+       -dCompressFonts=true \
+       -dSubsetFonts=true \
+       -dNOPAUSE -dQUIET -dBATCH \
+       -sOutputFile="${2}_optimized.pdf" "${2}"
+}
+# Usage: pdfoptimize preset input.pdf
+# Presets: /screen /ebook /printer /prepress
+# pdfoptimize /ebook large_document.pdf
+alias pdfoptimize='f_pdfoptimize'
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
