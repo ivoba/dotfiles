@@ -130,6 +130,7 @@ f_pdfoptimize() {
 # pdfoptimize /ebook large_document.pdf
 alias pdfoptimize='f_pdfoptimize'
 
+alias heic2jpg='for file in *.HEIC; do magick "$file" "${file%.HEIC}.jpg" && echo "Converted $file to ${file%.HEIC}.jpg"; done'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
