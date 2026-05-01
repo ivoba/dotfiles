@@ -9,10 +9,12 @@ my dotfiles
 3. run `make all` or `stow --verbose --target=$HOME --restow */`
 
 ## todo
+- use just instead of make
 - linux & osx branches
 - https://github.com/junegunn/fzf
 - https://github.com/cantino/mcfly
-- Use rewrite in rust https://github.com/qboileau/rstow or https://github.com/cafkafk/seidr
+- Use rewrite in rust https://github.com/qboileau/rstow or https://github.com/cafkafk/seidr (both seem not maintained)
+- checkout: https://github.com/RaphGL/Tuckr
 
 ## Resources
 - https://venthur.de/2021-12-19-managing-dotfiles-with-stow.html

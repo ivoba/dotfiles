@@ -1,12 +1,20 @@
+.PHONY: git zsh yazi all update-yazi update-yazi-plugins update delete help
+
 # Stow targets
 git:
-	stow --verbose --target=$$HOME --restow git
+	stow --verbose --target=$$HOME --adopt --restow git
 
 zsh:
-	stow --verbose --target=$$HOME --restow zsh
+	stow --verbose --target=$$HOME --adopt --restow zsh
 
 yazi:
 	stow --verbose --target=$$HOME/.config/yazi --adopt --restow yazi
+	@if command -v ya &> /dev/null; then \
+		echo "Installing Yazi flavor catppuccin-mocha..."; \
+		ya pkg add yazi-rs/flavors#catppuccin-mocha; \
+		echo "Installing Yazi plugins..."; \
+		ya pkg install; \
+	fi
 
 all:
 	make git zsh yazi
@@ -42,4 +50,3 @@ delete:  ## Remove all stowed configurations
 # Help target
 help:  ## Display this help
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m<target>\033[0m\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
-	stow --verbose --target=$$HOME/.config/yazi --delete */
