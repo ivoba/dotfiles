@@ -162,3 +162,6 @@ load-nvmrc
 # 2. $HOME/.codeium/windsurf/bin: Adds Codeium's Windsurf binary directory
 # Both are prepended to ensure they take precedence over system directories
 export PATH="$HOME/bin:$HOME/.codeium/windsurf/bin:$PATH"
+
+# Load machine-specific configurations if they exist
+[[ -f ~/.zshrc_local ]] && source ~/.zshrc_local
