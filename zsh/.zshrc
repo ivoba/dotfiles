@@ -165,3 +165,11 @@ export PATH="$HOME/bin:$HOME/.codeium/windsurf/bin:$PATH"
 
 # Load machine-specific configurations if they exist
 [[ -f ~/.zshrc_local ]] && source ~/.zshrc_local
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# uv python manager
+source $HOME/.local/share/../bin/env
+
+source "$HOME/.cargo/env"
+
+. "$HOME/.local/share/../bin/env"
