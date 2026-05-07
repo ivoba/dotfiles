@@ -133,8 +133,13 @@ alias pdfoptimize='f_pdfoptimize'
 alias heic2jpg='for file in *.HEIC; do magick "$file" "${file%.HEIC}.jpg" && echo "Converted $file to ${file%.HEIC}.jpg"; done'
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
-[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+if [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ]; then
+  \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm (macOS Homebrew)
+  [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+elif [ -s "$NVM_DIR/nvm.sh" ]; then
+  \. "$NVM_DIR/nvm.sh" # This loads nvm (Linux)
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+fi
 
 
 autoload -U add-zsh-hook
@@ -165,11 +170,8 @@ export PATH="$HOME/bin:$HOME/.codeium/windsurf/bin:$PATH"
 
 # Load machine-specific configurations if they exist
 [[ -f ~/.zshrc_local ]] && source ~/.zshrc_local
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# uv python manager
-source $HOME/.local/share/../bin/env
+# uv python manager (Linux install script path, no-op on macOS Homebrew)
+[ -s "$HOME/.local/bin/env" ] && source "$HOME/.local/bin/env"
 
-source "$HOME/.cargo/env"
-
-. "$HOME/.local/share/../bin/env"
+[ -s "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
