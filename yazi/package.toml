@@ -1,12 +1,12 @@
 [[plugin.deps]]
 use = "boydaihungst/mediainfo"
-rev = "8ab04b2"
-hash = "bdd196f71aa3e6aa02d1b1d6cad22424"
+rev = "49f5ab7"
+hash = "6e3b5e58f985cc2d625e0030dc35b1b2"
 
 [[plugin.deps]]
 use = "ndtoan96/ouch"
-rev = "594b8a2"
-hash = "c9e628fc0312d198db22ae2fa74883b"
+rev = "406ce6c"
+hash = "f5afc904d5106ee368c8aa2ded43bd74"
 
 [[plugin.deps]]
 use = "Reledia/glow"
@@ -30,5 +30,5 @@ hash = "18a2829738214fe9bca99a2fef19113d"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
-rev = "4c57537"
-hash = "8eabb4e88096f10905a6df62cfaadbf4"
+rev = "0670801"
+hash = "7dfe41c9c3d9be76da8a844263d0bbed"

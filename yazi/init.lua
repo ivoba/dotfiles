@@ -10,7 +10,7 @@ require("bunny"):setup({
     { key = "/",          path = "/",              desc = "Root"         },
     { key = "~",          path = "~",              desc = "Home"         },
     { key = "d",          path = "~/Downloads",    desc = "Downloads"    },
-    { key = "k",          path = "~/kDrive",       desc = "kDrive"    },
+    { key = "k",          path = "~/kDrive",       desc = "kDrive"       },
     { key = "s",          path = "~/Desktop",      desc = "Desktop"      },
     { key = "D",          path = "~/Documents",    desc = "Documents"    },
     { key = "c",          path = "~/.config",      desc = "Config files" },
