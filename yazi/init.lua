@@ -13,6 +13,8 @@ require("bunny"):setup({
     { key = "k",          path = "~/kDrive",       desc = "kDrive"       },
     { key = "s",          path = "~/Desktop",      desc = "Desktop"      },
     { key = "D",          path = "~/Documents",    desc = "Documents"    },
+    { key = "p",          path = "~/Pictures",     desc = "Pictures"     },
+    { key = "S",          path = "~/Sites",        desc = "Sites"        },
     { key = "c",          path = "~/.config",      desc = "Config files" },
     -- key and path attributes are required, desc is optional
   },
