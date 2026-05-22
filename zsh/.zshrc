@@ -162,6 +162,37 @@ fi
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
+# node_updater.sh
+#
+# This script makes keeping NVM-managed NodeJS and its global packages up-to-date a breeze.
+# Requires nvm, the Node Version Manager (https://github.com/creationix/nvm)
+# 
+# First load it: _$: touch node_updater.sh
+# Then run it: node_updater
+#
+# Protip: Add to your .bash_profile for hassle-free updating.
+#
+
+node_updater () {
+    export NODE_CURRENT=$(nvm_ls_current)
+    export NODE_LATEST=$(nvm_remote_versions | grep '^v' | tail -1)
+
+    # Update global NodeJS to 'latest'. Migrates all installed global packages into the new Version.
+    echo "Updating global NodeJS installation from ${NODE_CURRENT} to ${NODE_LATEST}."
+    nvm install ${NODE_LATEST} --reinstall-packages-from=${NODE_CURRENT} && echo "Upgrade of global NodeJS installation complete."
+
+    # Remove previous NodeJS versions
+    nvm use ${NODE_LATEST}
+
+    # Update global NodeJS packages to 'latest'
+    for PACKAGE in $(npm --global outdated --parseable --depth=0 --loglevel silent | cut -d: -f3 | cut -f1 -d'@');
+        do npm --global install --loglevel silent ${PACKAGE} && echo "Updated global package '${PACKAGE}' to 'latest'.";
+    done
+
+    # Uncomment to delete previous NodeJS  installations after update
+    #find ${NVM_DIR}/versions/node -type d -mindepth 1 -maxdepth 1 -not -name ${NODE_LATEST} -exec sh -c 'printf "Removed NodeJS version: "' \; -exec basename {} \; -exec rm -r {} \;
+}
+
 # This line adds directories to the system's PATH:
 # 1. $HOME/bin: Adds the user's personal bin directory
 # 2. $HOME/.codeium/windsurf/bin: Adds Codeium's Windsurf binary directory
