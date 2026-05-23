@@ -9,9 +9,8 @@ my dotfiles
 3. run `make all` or `stow --verbose --target=$HOME --restow */`
 
 ## todo
+- https://superuser.com/a/1664624 for git ssh key config
 - use just instead of make
-- linux & osx branches
-- https://github.com/junegunn/fzf
 - https://github.com/cantino/mcfly
 - Use rewrite in rust https://github.com/qboileau/rstow or https://github.com/cafkafk/seidr (both seem not maintained)
 - checkout: https://github.com/RaphGL/Tuckr
