@@ -11,7 +11,6 @@ my dotfiles
 ## todo
 - https://superuser.com/a/1664624 for git ssh key config
 - use just instead of make
-- https://github.com/cantino/mcfly
 - Use rewrite in rust https://github.com/qboileau/rstow or https://github.com/cafkafk/seidr (both seem not maintained)
 - checkout: https://github.com/RaphGL/Tuckr
 

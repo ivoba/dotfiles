@@ -206,3 +206,5 @@ export PATH="$HOME/bin:$HOME/.codeium/windsurf/bin:$PATH"
 [ -s "$HOME/.local/bin/env" ] && source "$HOME/.local/bin/env"
 
 [ -s "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
+
+eval "$(mcfly init zsh)"
