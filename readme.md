@@ -6,10 +6,9 @@ my dotfiles
 ```sh
   cd ~/dotfiles
 ```
-3. run `make all` or `stow --verbose --target=$HOME --restow */`
+3. run `just all` or `stow --verbose --target=$HOME --restow */`
 
 ## todo
-- use just instead of make
 - Use rewrite in rust https://github.com/qboileau/rstow or https://github.com/cafkafk/seidr (both seem not maintained)
 - checkout: https://github.com/RaphGL/Tuckr
 
