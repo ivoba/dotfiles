@@ -7,6 +7,9 @@ git:
 zsh:
     stow --verbose --target=$HOME --adopt --restow zsh
 
+lazygit:
+    stow --verbose --target=$HOME/.config/lazygit --adopt --restow lazygit
+
 yazi:
     stow --verbose --target=$HOME/.config/yazi --adopt --restow yazi
     if command -v ya &> /dev/null; then \
@@ -16,7 +19,7 @@ yazi:
         ya pkg install; \
     fi
 
-all: git zsh yazi
+all: git zsh yazi lazygit
 
 # Update targets
 update-yazi:  ## Update Yazi (if installed via homebrew)
@@ -44,6 +47,10 @@ delete:  ## Remove all stowed configurations
     if [ -d "$HOME/.config/yazi" ]; then \
         echo "Removing Yazi configuration..."; \
         stow --verbose --target=$HOME/.config/yazi --delete yazi; \
+    fi
+    if [ -d "$HOME/.config/lazygit" ]; then \
+        echo "Removing LazyGit configuration..."; \
+        stow --verbose --target=$HOME/.config/lazygit --delete lazygit; \
     fi
 
 # Help target
