@@ -209,3 +209,10 @@ export PATH="$HOME/bin:$HOME/.codeium/windsurf/bin:$PATH"
 
 eval "$(mcfly init zsh)"
 eval "$(zoxide init zsh)"
+
+# bun completions
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
