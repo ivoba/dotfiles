@@ -19,7 +19,7 @@ yazi:
         ya pkg install; \
     fi
 
-all: git zsh yazi lazygit
+all: git zsh yazi lazygit nvim
 
 # Update targets
 update-yazi:  ## Update Yazi (if installed via homebrew)
@@ -52,6 +52,13 @@ delete:  ## Remove all stowed configurations
         echo "Removing LazyGit configuration..."; \
         stow --verbose --target=$HOME/.config/lazygit --delete lazygit; \
     fi
+    if [ -d "$HOME/.config/nvim" ]; then \
+        echo "Removing Neovim configuration..."; \
+        rm -rf "$HOME/.config/nvim/lua/config"; \
+    fi
+
+nvim:  ## Setup LazyVim with custom configuration
+    @bash ~/Sites/dotfiles/nvim/setup.sh
 
 # Help target
 help:

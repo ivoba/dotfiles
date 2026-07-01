@@ -1,0 +1,9 @@
+# Ignore any generated or temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignore any accidentally created symlinks
+lua/config/path_commands.lua
+lua/config/keymaps.lua
