@@ -7,21 +7,21 @@ ratio = [1, 2, 5]
     # Replace magick, image, video with mediainfo
     { mime = "{audio,video,image}/*", run = "mediainfo"},
     { mime = "application/subrip", run = "mediainfo" },
-    { name = "*.md", run = "glow" },
-    { name = "*.svg", run = "resvg" },
-    { name = "*.csv", run = "duckdb" },  
-    { name = "*.tsv", run = "duckdb" },  
-    { name = "*.parquet", run = "duckdb" },  
+    { url = "*.md", run = "glow" },
+    { url = "*.svg", run = "resvg" },
+    { url = "*.csv", run = "duckdb" },  
+    { url = "*.tsv", run = "duckdb" },  
+    { url = "*.parquet", run = "duckdb" },  
   ]
   prepend_preloaders = [
     # Replace magick, image, video with mediainfo
     { mime = "{audio,video,image}/*", run = "mediainfo" },
     { mime = "application/subrip", run = "mediainfo" },
-    { name = "*.csv", run = "duckdb", multi = false },
-    { name = "*.tsv", run = "duckdb", multi = false },
-    { name = "*.parquet", run = "duckdb", multi = false },
-    { name = "*.db", run = "duckdb" },
-    { name = "*.duckdb", run = "duckdb" },
+    { url = "*.csv", run = "duckdb", multi = false },
+    { url = "*.tsv", run = "duckdb", multi = false },
+    { url = "*.parquet", run = "duckdb", multi = false },
+    { url = "*.db", run = "duckdb" },
+    { url = "*.duckdb", run = "duckdb" },
   ]
   # There are more extensions which are supported by mediainfo.
   # Just add file's MIME type to `previewers`, `preloaders` above.

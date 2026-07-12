@@ -1,7 +1,7 @@
 [[plugin.deps]]
 use = "boydaihungst/mediainfo"
-rev = "49f5ab7"
-hash = "6e3b5e58f985cc2d625e0030dc35b1b2"
+rev = "a6d30a1"
+hash = "579fe44e64b655ce46eeb526e3332f55"
 
 [[plugin.deps]]
 use = "ndtoan96/ouch"
@@ -20,8 +20,8 @@ hash = "87b9233a74325e95011670ed20bbd0d4"
 
 [[plugin.deps]]
 use = "Ape/open-with-cmd"
-rev = "e3d430f"
-hash = "d29c1ffa99099181faf8c01d1f59aa4c"
+rev = "eba191d"
+hash = "722a60eca1b338c9c24bb508d2d48578"
 
 [[plugin.deps]]
 use = "stelcodes/bunny"
@@ -30,5 +30,5 @@ hash = "18a2829738214fe9bca99a2fef19113d"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
-rev = "0670801"
+rev = "4770a34"
 hash = "7dfe41c9c3d9be76da8a844263d0bbed"
