@@ -31,6 +31,7 @@ bash ~/Sites/dotfiles/nvim/setup.sh
 
 ### Key Mappings
 
+- Yank/delete/paste operations sync with the system clipboard automatically
 - `<leader>cf` - Copy relative path (typically `<space>cf`)
 - `<leader>cF` - Copy absolute path (typically `<space>cF`)
 
