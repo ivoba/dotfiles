@@ -7,7 +7,7 @@ ratio = [1, 2, 5]
     # Replace magick, image, video with mediainfo
     { mime = "{audio,video,image}/*", run = "mediainfo"},
     { mime = "application/subrip", run = "mediainfo" },
-    { url = "*.md", run = "glow" },
+    { url = "*.md", run = 'faster-piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"' },
     { url = "*.svg", run = "resvg" },
     { url = "*.csv", run = "duckdb" },  
     { url = "*.tsv", run = "duckdb" },  
