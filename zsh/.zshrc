@@ -219,3 +219,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 #k9s
 export K9S_EDITOR="nvim"
+# Only load Homebrew on Linux
+if [[ "$(uname)" == "Linux" ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
