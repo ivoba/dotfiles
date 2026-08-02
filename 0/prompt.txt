@@ -1,0 +1,1 @@
+no, replace current jq, glow and fzf with brew installs and add them to Brewfile
