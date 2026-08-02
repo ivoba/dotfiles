@@ -1,0 +1,1 @@
+in justfile in the `update-yazi` task, add a manuall download script to the else statement. it should detect correct latest stable build from https://github.com/sxyazi/yazi/releases, download it, check checksums and move to path location.
