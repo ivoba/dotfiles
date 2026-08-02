@@ -1,0 +1,1 @@
+add nvim as default to EDITOR to .zshrc
