@@ -1,0 +1,1 @@
+just add the eza preview, do not replace all other previewers config in yazi.toml. restore it.
