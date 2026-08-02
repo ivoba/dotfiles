@@ -1,0 +1,1 @@
+replace piper yazi plugin with faster-piper. ya pkg add alberti42/faster-piper. see https://github.com/alberti42/faster-piper.yazi#usage for configuration
