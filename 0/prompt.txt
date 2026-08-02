@@ -1,0 +1,2 @@
+error: recipe line has extra leading whitespace
+  ——▶ justfile:32:5
