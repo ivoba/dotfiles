@@ -1,0 +1,1 @@
+propose a plan: on linux i have installed programs with apt or manually. i would like to reinstall wit brew to create a brewfile and to be in sync with the other machine with osx.
