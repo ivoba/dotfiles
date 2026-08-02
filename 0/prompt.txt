@@ -1,0 +1,1 @@
+error: recipe `update-yazi` failed on line 100 with exit code 127
