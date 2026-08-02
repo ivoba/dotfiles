@@ -1,0 +1,1 @@
+remove the glow yazi plugin, install glow standalone
