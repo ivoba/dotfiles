@@ -1,0 +1,25 @@
+add the eza plugin to .zshrc
+
+---
+
+the alias are not necessary, see https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/eza/README.md
+
+---
+
+looks like the oh-my-zsh plugin does not set the alias although this is in the plugin. what could be the reason?
+
+---
+
+isn't double to declare oh-my-zsh plugins and then source it manually?
+
+---
+
+wait, what was the reason the alias for eza did not work wit the current plugin installation? is plugins=(eza) wrong?
+
+---
+
+then try plugins+ syntax after oh-my-zsh script instead of source
+
+---
+
+i changed .zshrc and added eza plugin to plugins. now i get message: eza not found. Please install eza before using this plugin. eza is installed however
