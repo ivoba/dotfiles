@@ -1,6 +1,11 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Load Homebrew on Linux before oh-my-zsh to ensure eza in PATH
+if [[ "$(uname)" == "Linux" ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -70,7 +75,7 @@ ZSH_THEME="apple"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git eza)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -194,10 +199,7 @@ node_updater () {
 }
 
 # This line adds directories to the system's PATH:
-# 1. $HOME/bin: Adds the user's personal bin directory
-# 2. $HOME/.codeium/windsurf/bin: Adds Codeium's Windsurf binary directory
-# Both are prepended to ensure they take precedence over system directories
-export PATH="$HOME/bin:$HOME/.codeium/windsurf/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 # Load machine-specific configurations if they exist
 [[ -f ~/.zshrc_local ]] && source ~/.zshrc_local
@@ -220,7 +222,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 #k9s
 export K9S_EDITOR="nvim"
 export EDITOR="nvim"
-# Only load Homebrew on Linux
-if [[ "$(uname)" == "Linux" ]]; then
-  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-fi
+

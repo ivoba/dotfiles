@@ -11,7 +11,7 @@ my dotfiles
 ## todo
 - Use rewrite in rust: https://github.com/RaphGL/Tuckr
 - add Brewfile, add brew on linux
-- test tar files, add yazi-testing-ground to github 
+- ohmyzsh eza plugin 
 
 ## Resources
 - https://venthur.de/2021-12-19-managing-dotfiles-with-stow.html
