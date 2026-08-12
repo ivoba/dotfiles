@@ -106,6 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias S="cd ~/Sites"
 alias I="cd ~/IdeaProjects"
+alias y="yazi"
 # create MR for new branch in Gitlab
 alias gpmr='git push -o merge_request.title="$(git symbolic-ref --short HEAD)" -o merge_request.create'
 
