@@ -10,6 +10,10 @@ zsh:
 lazygit:
 	stow --verbose --target=$HOME/.config/lazygit --adopt --restow lazygit
 
+ghostty:
+	mkdir -p $HOME/.config/ghostty
+	stow --verbose --target=$HOME/.config/ghostty --adopt --restow ghostty
+
 yazi:
 	stow --verbose --target=$HOME/.config/yazi --adopt --restow yazi
 	if command -v ya &> /dev/null; then \
@@ -19,7 +23,7 @@ yazi:
 		ya pkg install; \
 	fi
 
-all: git zsh yazi lazygit nvim
+all: git zsh yazi lazygit nvim ghostty
 
 # Update targets
 update-yazi:  ## Update Yazi (if installed via homebrew)
@@ -54,6 +58,10 @@ delete:  ## Remove all stowed configurations
 	if [ -d "$HOME/.config/lazygit" ]; then \
 		echo "Removing LazyGit configuration..."; \
 		stow --verbose --target=$HOME/.config/lazygit --delete lazygit; \
+	fi
+	if [ -d "$HOME/.config/ghostty" ]; then \
+		echo "Removing Ghostty configuration..."; \
+		stow --verbose --target=$HOME/.config/ghostty --delete ghostty; \
 	fi
 	if [ -d "$HOME/.config/nvim" ]; then \
 		echo "Removing Neovim configuration..."; \
