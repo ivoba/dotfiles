@@ -10,8 +10,6 @@ my dotfiles
 
 ## todo
 - Use rewrite in rust: https://github.com/RaphGL/Tuckr
-- add Brewfile, add brew on linux
-- ohmyzsh eza plugin 
 
 ## Resources
 - https://venthur.de/2021-12-19-managing-dotfiles-with-stow.html
