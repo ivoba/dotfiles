@@ -1,21 +1,23 @@
-replace 7zip,ripgrep,fd-find with brew install and add to Brewfile
+<skill name="commit" location="/home/ivoba/.pi/agent/skills/commit/SKILL.md">
+References are relative to /home/ivoba/.pi/agent/skills/commit.
 
----
+# Commit Skill
 
-add exiftool
+This skill enforces Gitmoji-style commit messages. It ensures that commit messages are brief, concise, and follow the Gitmoji convention. It only commits changes and does not push them. If no commit message is provided, the skill will infer one using `git status` and `git diff`.
 
----
+## Important
+- **Commit but do NOT push.** Push and pull operations will happen manually.
 
-replace imagemagick to a brew install and add to Brewfile
+## Usage
+When the user requests to commit changes, this skill will guide them to provide a Gitmoji-style commit message. The message should be brief and concise, following the Gitmoji convention. The skill will only commit the changes and will not push them. If it is unclear which files should be included, the skill will ask the user to specify. If no commit message is provided, the skill will infer one using `git status` and `git diff`.
 
----
+## Example
+- User input: `add new feature`
+- Expected output: `:sparkles: add new feature`
 
-replace lazygit with brew install and add to brewfile
+## Dependencies
+- Git
+- Gitmoji knowledge (assumed to be known by the LLM)
+</skill>
 
----
-
-i restarted shell, still old path.
-
----
-
-y
+commit staged changes
