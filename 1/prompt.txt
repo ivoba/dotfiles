@@ -1,0 +1,21 @@
+can Brewfile have conditional installs fo linux and osx? i want some taps only be installed on linux.
+
+---
+
+try again
+
+---
+
+yes and add mupdf nd install
+
+---
+
+run Brewfile
+
+---
+
+how can i open mupdf?
+
+---
+
+uninstall mupdf and remove from brewfile

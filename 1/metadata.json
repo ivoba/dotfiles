@@ -1,0 +1,40 @@
+{
+  "cli_version": "0.9.0",
+  "checkpoint_id": "01M09PABWCSZHAD3154GEMXAD6",
+  "session_id": "019ff9a9-12ec-73a4-b07f-55e3991189bd",
+  "strategy": "manual-commit",
+  "created_at": "2026-08-18T05:43:16.360359022Z",
+  "branch": "main",
+  "checkpoints_count": 7,
+  "files_touched": [
+    "yazi/package.toml"
+  ],
+  "agent": "Pi",
+  "model": "devstral-latest",
+  "turn_id": "7da86273de07",
+  "checkpoint_transcript_start": 43,
+  "transcript_lines_at_start": 43,
+  "compact_transcript_start": 23,
+  "token_usage": {
+    "input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 0,
+    "api_call_count": 0
+  },
+  "session_metrics": {
+    "turn_count": 7
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-08-18T05:43:16.134015236Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 0,
+    "human_modified": 7,
+    "human_removed": 0,
+    "total_committed": 0,
+    "total_lines_changed": 7,
+    "agent_percentage": 0,
+    "metric_version": 2
+  }
+}
