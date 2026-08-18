@@ -3,7 +3,7 @@
   "checkpoint_id": "01M09NZHZKT6MNCBP2ZAZX44E8",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 6,
+  "checkpoints_count": 13,
   "files_touched": [
     "Brewfile",
     "readme.md"
@@ -22,13 +22,20 @@
       "compact_transcript": "/1/transcript.jsonl",
       "content_hash": "/1/content_hash.txt",
       "prompt": "/1/prompt.txt"
+    },
+    {
+      "metadata": "/2/metadata.json",
+      "transcript": "/2/full.jsonl",
+      "compact_transcript": "/2/transcript.jsonl",
+      "content_hash": "/2/content_hash.txt",
+      "prompt": "/2/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 162450,
+    "input_tokens": 225410,
     "cache_creation_tokens": 0,
-    "cache_read_tokens": 97792,
-    "output_tokens": 2372,
-    "api_call_count": 52
+    "cache_read_tokens": 126288,
+    "output_tokens": 3073,
+    "api_call_count": 71
   }
 }
