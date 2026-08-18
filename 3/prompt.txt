@@ -1,0 +1,9 @@
+add resvg to brewfile and install
+
+---
+
+replace p7zip with 7z
+
+---
+
+install 7z
