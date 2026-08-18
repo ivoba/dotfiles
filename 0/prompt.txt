@@ -1,0 +1,9 @@
+add a AGENTS.md that describes that files are symlinked. Agent should not edit files outside of workdir, but look for files in this workdir. see also readme.
+
+---
+
+rework the AGENTS.md. describe that the repo is using stow and symlinks and that agents should not edit files outside work dir, files are syminked anyway. so when .zshrc should be edited look for it in this work dir and not in HOME.
+
+---
+
+rework the AGENTS.md. describe that the repo is using stow and symlinks and that agents should not edit files outside work dir, files are syminked anyway. so when .zshrc should be edited look for it in this work dir and not in HOME.
