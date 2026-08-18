@@ -1,0 +1,21 @@
+replace 7zip,ripgrep,fd-find with brew install and add to Brewfile
+
+---
+
+add exiftool
+
+---
+
+replace imagemagick to a brew install and add to Brewfile
+
+---
+
+replace lazygit with brew install and add to brewfile
+
+---
+
+i restarted shell, still old path.
+
+---
+
+y

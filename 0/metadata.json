@@ -1,0 +1,114 @@
+{
+  "cli_version": "0.9.0",
+  "checkpoint_id": "01M09NZHZKT6MNCBP2ZAZX44E8",
+  "session_id": "019fbc3f-6bd7-7ce0-a6f4-31161604a29c",
+  "strategy": "manual-commit",
+  "created_at": "2026-08-18T05:37:21.9047564Z",
+  "branch": "main",
+  "checkpoints_count": 3,
+  "save_step_count": 3,
+  "files_touched": [
+    "Brewfile",
+    "readme.md"
+  ],
+  "agent": "Pi",
+  "model": "devstral-medium-latest",
+  "turn_id": "c3e4da5e476d",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 149261,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 97792,
+    "output_tokens": 1936,
+    "api_call_count": 47
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "pi-skill-commit-2026-08-18T05:37:13.061Z-0",
+      "event_type": "prompt_invocation",
+      "skill": {
+        "name": "commit"
+      },
+      "source": {
+        "agent": "pi",
+        "signal": "input_slash_command",
+        "confidence": "explicit"
+      },
+      "turn_id": "c3e4da5e476d",
+      "timestamp": "2026-08-18T05:37:13.061Z",
+      "native": {
+        "command": "/skill:commit"
+      },
+      "collapse": {
+        "target": "user_message",
+        "label": "/skill:commit",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "session_metrics": {
+    "turn_count": 3
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-08-18T05:37:21.763964885Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 3,
+    "total_committed": 3,
+    "total_lines_changed": 3,
+    "agent_percentage": 0,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 167,
+      "user_lines_removed": 1,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".pi/extensions/entire/index.ts": 127,
+        "Brewfile": 40
+      },
+      "user_removed_per_file": {
+        "readme.md": 1
+      }
+    },
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 127,
+      "user_lines_removed": 0,
+      "agent_lines_added": 43,
+      "agent_lines_removed": 1,
+      "user_added_per_file": {
+        ".pi/extensions/entire/index.ts": 127
+      }
+    },
+    {
+      "checkpoint_number": 3,
+      "user_lines_added": 127,
+      "user_lines_removed": 0,
+      "agent_lines_added": 43,
+      "agent_lines_removed": 1,
+      "user_added_per_file": {
+        ".pi/extensions/entire/index.ts": 127
+      }
+    },
+    {
+      "checkpoint_number": 4,
+      "user_lines_added": 127,
+      "user_lines_removed": 1,
+      "agent_lines_added": 43,
+      "agent_lines_removed": 1,
+      "user_added_per_file": {
+        ".pi/extensions/entire/index.ts": 127
+      },
+      "user_removed_per_file": {
+        "readme.md": 1
+      }
+    }
+  ]
+}
