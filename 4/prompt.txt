@@ -1,0 +1,13 @@
+I see: error: path 'yazi/package.toml' is unmerged
+
+---
+
+do t
+
+---
+
+revert yazi/package.yaml to original state.
+
+---
+
+revert @yazi/keymap.toml and @yazi/yazi.toml
