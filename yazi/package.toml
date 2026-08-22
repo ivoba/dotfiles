@@ -1,12 +1,12 @@
 [[plugin.deps]]
 use = "boydaihungst/mediainfo"
-rev = "e079a00"
-hash = "8dd8bc3484547390ba50dfa58d7436b0"
+rev = "77825c4"
+hash = "69c73e72d949a0619511247117ee679c"
 
 [[plugin.deps]]
 use = "ndtoan96/ouch"
-rev = "8e70ec7"
-hash = "543eb6688a3c8eebe9d8f7d1ae0603a3"
+rev = "cfe4f50"
+hash = "eff5702573b6cfba61e4ac8b1969629a"
 
 [[plugin.deps]]
 use = "wylie102/duckdb"
