@@ -1,7 +1,7 @@
 [[plugin.deps]]
 use = "boydaihungst/mediainfo"
-rev = "77825c4"
-hash = "69c73e72d949a0619511247117ee679c"
+rev = "73a3658"
+hash = "fa787a8ef785f2976ea2861f62b8c6c4"
 
 [[plugin.deps]]
 use = "ndtoan96/ouch"
@@ -30,5 +30,5 @@ hash = "12b5e342d54db42b5b023faa1a11f28e"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
-rev = "be0b21d"
+rev = "20b47bf"
 hash = "ce320f877fe709b189433941aba747c4"
