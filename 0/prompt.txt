@@ -1,0 +1,5 @@
+add `    { on = "<F12>", run = "plugin mediainfo -- --show-preview --hide-metadata --reset --show-metadata --hide-preview", desc = "Show media preview image and hide metadata" }` to @yazi/keymap.toml. choose m+t as key.
+
+---
+
+replace F12 with key combination mi+t
