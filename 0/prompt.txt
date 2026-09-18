@@ -1,0 +1,1 @@
+i want to add pi config @/home/ivoba/.pi/agent to dotfiles and manage it via stow. check if current implementaion works.

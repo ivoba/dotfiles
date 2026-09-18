@@ -1,0 +1,85 @@
+{
+  "cli_version": "0.9.0",
+  "checkpoint_id": "01M2SQ6EQFXSNGN8AV6XQ3RHW9",
+  "session_id": "01a09a01-5bd7-76d5-be3f-8d4ce5c00326",
+  "strategy": "manual-commit",
+  "created_at": "2026-09-18T07:39:25.159301569Z",
+  "branch": "main",
+  "checkpoints_count": 3,
+  "save_step_count": 3,
+  "files_touched": [
+    "justfile",
+    "pi/agent/extensions/eko24ive-pi-ask.json",
+    "pi/agent/extensions/guardrails.json",
+    "pi/agent/skills/commit/README.md",
+    "pi/agent/skills/commit/SKILL.md",
+    "pi/agent/skills/make-zettelkasten-note/SKILL.md",
+    "pi/agent/skills/remove-pi-extension/README.md",
+    "pi/agent/skills/remove-pi-extension/SKILL.md",
+    "pi/agent/skills/yazi-plugin-manager/SKILL.md"
+  ],
+  "agent": "Pi",
+  "model": "gemini-3.1-flash-lite-preview",
+  "turn_id": "bf0013e68dba",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 0,
+    "api_call_count": 3
+  },
+  "session_metrics": {
+    "turn_count": 3
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-09-18T07:39:25.067441851Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 3293,
+    "human_modified": 4,
+    "human_removed": 0,
+    "total_committed": 3293,
+    "total_lines_changed": 3297,
+    "agent_percentage": 0,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 738,
+      "user_lines_removed": 1,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".pi/extensions/entire/index.ts": 127,
+        "justfile": 8,
+        "pi/agent/extensions/eko24ive-pi-ask.json": 139,
+        "pi/agent/extensions/guardrails.json": 254,
+        "pi/agent/skills/commit/README.md": 28,
+        "pi/agent/skills/commit/SKILL.md": 22,
+        "pi/agent/skills/make-zettelkasten-note/SKILL.md": 34,
+        "pi/agent/skills/remove-pi-extension/README.md": 44,
+        "pi/agent/skills/remove-pi-extension/SKILL.md": 44,
+        "pi/agent/skills/yazi-plugin-manager/SKILL.md": 38
+      },
+      "user_removed_per_file": {
+        "justfile": 1
+      }
+    },
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    },
+    {
+      "checkpoint_number": 3,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    }
+  ]
+}

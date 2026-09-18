@@ -1,0 +1,1 @@
+{"v":1,"agent":"pi","cli_version":"0.9.0","type":"user","ts":"2026-09-13T09:05:05.129Z","content":[{"text":"i want to add pi config @/home/ivoba/.pi/agent to dotfiles and manage it via stow. check if current implementaion works."}]}
