@@ -23,7 +23,10 @@ yazi:
 		ya pkg install; \
 	fi
 
-all: git zsh yazi lazygit nvim ghostty
+pi:
+	stow --verbose=3 --target=$HOME/.pi --adopt --restow pi
+
+all: git zsh yazi lazygit nvim ghostty pi
 
 # Update targets
 update-yazi:  ## Update Yazi (if installed via homebrew)
@@ -66,6 +69,10 @@ delete:  ## Remove all stowed configurations
 	if [ -d "$HOME/.config/nvim" ]; then \
 		echo "Removing Neovim configuration..."; \
 		rm -rf "$HOME/.config/nvim/lua/config"; \
+	fi
+	if [ -d "$HOME/.pi" ]; then \
+		echo "Removing Pi configuration..."; \
+		stow --verbose --target=$HOME/.pi --delete pi; \
 	fi
 
 nvim:  ## Setup LazyVim with custom configuration
